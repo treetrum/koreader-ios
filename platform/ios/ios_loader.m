@@ -81,10 +81,10 @@
     if (!self.button) {
         self.button = [UIButton buttonWithType:UIButtonTypeSystem];
         self.button.backgroundColor = [UIColor colorWithWhite:0 alpha:0.55];
-        [self.button setTitle:@"Dismiss" forState:UIControlStateNormal];
+        [self.button setTitle:@"Hide keyboard" forState:UIControlStateNormal];
         [self.button setTitleColor:UIColor.whiteColor forState:UIControlStateNormal];
         self.button.titleLabel.font = [UIFont boldSystemFontOfSize:14];
-        self.button.contentEdgeInsets = UIEdgeInsetsMake(10, 14, 10, 14);
+        self.button.contentEdgeInsets = UIEdgeInsetsMake(7, 10, 7, 10);
         self.button.layer.cornerRadius = 10;
         self.button.layer.masksToBounds = YES;
         [self.button addTarget:self action:@selector(onDismissTap)
